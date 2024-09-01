@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Video */
+.background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+/* Container for form and content */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    color: #333;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.921);
+}
+
+.container .form-group {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.container .form-group label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.container .form-group input,
+.container .form-group select {
+    width: calc(100% - 24px);
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.4;
+    height: 40px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+h1 {
+    background-color: rgba(77, 69, 69, 0.5);
+    color: white;
+    font-size: 32px;
+    line-height: 1.5;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid #090c0e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for checkboxes */
+.form-group div input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.form-group div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+/* Make checkboxes and labels smaller */
+.form-group div label {
+    font-size: 16px;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Optional: Style for required fields that are valid */
+input:required:valid {
+    border-color: green;
+}
+
+/* Only add an asterisk to labels for inputs that are not checkboxes or radios */
+
+
+/* Style adjustments for checkboxes and radio buttons */
+.radio-group label,
+.form-group div label {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group input[type="radio"],
+.form-group div input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Align elements properly */
+.form-group {
+    text-align: left;
+}
+
+.form-group div input[type="checkbox"] {
+    margin-right: 8px;
+    width: 15px;
+    height: 15px;
+    margin-left: 0;
+}
+
+.form-group div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+
+.form-group div label {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Align radio buttons and labels */
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 20px;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+
+.radio-group label {
+    font-size: 16px;
+    margin: 0;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 8px;
+    margin-left: 0;
+    width: 18px;
+    height: 18px;
+}

@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, button, .google-signin {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button, .google-signin {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover, .google-signin:hover {
+            background-color: #0056b3;
+        }
+        .google-signin {
+            background-color: #db4437;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign In</h1>
+        <button class="google-signin" onclick="signInWithGoogle()">Sign in with Google</button>
+        <p>or</p>
+        <form id="signin-form">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <button type="button" onclick="submitSignin()">Sign In</button>
+        </form>
+    </div>
+    <script>
+        function signInWithGoogle() {
+            // This function would typically involve Google's OAuth2.0 integration.
+            // For this example, it will simulate a successful sign-in and redirect to the dashboard.
+            alert("Signed in with Google successfully.");
+            window.location.href = "hello.html";
+        }
+
+        function submitSignin() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (email && password) {
+                window.location.href = "hello.html";
+            } else {
+                alert('Please enter your email and password.');
+            }
+        }
+    </script>
+</body>
+</html>
